@@ -1,0 +1,32 @@
+/* Global App Styles */
+
+* {
+  margin: 0;                           /* Removes default margins from all elements */
+  padding: 0;                          /* Removes default padding from all elements */
+  box-sizing: border-box;              /* Makes padding and borders count inside element width */
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Modern, clean fonts */
+  background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);  /* Blue gradient background */
+  min-height: 100vh;                   /* Full viewport height */
+  display: flex;                       /* Flexbox for centering */
+  align-items: center;                 /* Centers content vertically */
+  justify-content: center;             /* Centers content horizontally */
+}
+
+.app {
+  width: 100%;                         /* Full width container */
+  display: flex;                       /* Flexbox for centering business card */
+  justify-content: center;             /* Centers the business card */
+  align-items: center;                 /* Centers the business card vertically */
+  min-height: 100vh;                   /* Full height */
+  padding: 1rem;                       /* Small padding for mobile devices */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .app {
+    padding: 0.5rem;                   /* Less padding on mobile */
+  }
+}
